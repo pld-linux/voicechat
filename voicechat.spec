@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/sound/talk/%{name}-%{alt_version}.tar.gz
+# Source0-md5:	71148bbf984b2ce6e062a7c81d0883f0
 Patch0:		%{name}-make.patch
 BuildRequires:	libgsm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
