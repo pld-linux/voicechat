@@ -4,13 +4,13 @@ Name:		voicechat
 %define		alt_version 0.40-beta
 Version:	0.40_beta
 Release:	1
+License:	GPL
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
-License:	GPL
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/sound/talk/%{name}-%{alt_version}.tar.gz
 Patch0:		%{name}-make.patch
-BuildRequires:	libgsm
+BuildRequires:	libgsm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
