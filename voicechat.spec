@@ -16,8 +16,8 @@ Two-person bidirectional voice (and text) chat via a small-bandwidth
 TCP/IP network.
 
 %description -l pl
-Aplikacja do prowadzenia dwuosobowych, obukierunkowych rozmów
-(i przesy³ania tekstu) przez sieæ TCP/IP ma³ej przepustowo¶ci.
+Aplikacja do prowadzenia dwuosobowych, obukierunkowych rozmów (i
+przesy³ania tekstu) przez sieæ TCP/IP ma³ej przepustowo¶ci.
 
 %prep
 %setup  -q -n %{name}-%{alt_version}
@@ -33,7 +33,7 @@ install -d		$RPM_BUILD_ROOT%{_bindir}
 install voicevolume	$RPM_BUILD_ROOT%{_bindir}
 install voicechat 	$RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README 
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
