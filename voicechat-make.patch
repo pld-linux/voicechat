@@ -1,0 +1,24 @@
+diff -u voicechat-0.40-beta.orig/Makefile voicechat-0.40-beta/Makefile
+--- voicechat-0.40-beta.orig/Makefile	Sun Oct 29 00:08:45 1995
++++ voicechat-0.40-beta/Makefile	Tue Aug 29 01:07:57 2000
+@@ -11,8 +11,6 @@
+ NCURSESLFLAG=
+ NCURSESLIB=-lncurses
+ 
+-GSMCFLAG=-I./gsm-1.0/inc
+-GSMLFLAG=-L./gsm-1.0/lib
+ GSMLIB=-lgsm
+ 
+ # No modifications should be needed below...
+diff -u voicechat-0.40-beta.orig/net.c voicechat-0.40-beta/net.c
+--- voicechat-0.40-beta.orig/net.c	Sun Oct 29 00:08:46 1995
++++ voicechat-0.40-beta/net.c	Tue Aug 29 01:06:59 2000
+@@ -13,7 +13,7 @@
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <arpa/inet.h> /* inet_addr() */
+-#include <linux/in.h>
++#include <netinet/in.h>
+ #include "voicechat.h"
+ 
+ int netfd=-1;
