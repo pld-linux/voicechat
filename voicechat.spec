@@ -1,4 +1,5 @@
-Summary:	Voice over IP
+Summary:	Voice chat over IP
+Summary(pl):	Rozmowa przez Internet
 Name:		voicechat
 %define		alt_version 0.40-beta
 Version:	0.40_beta
@@ -7,13 +8,18 @@ Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 License:	GPL
-Source0:	%{name}-%{alt_version}.tar.gz
+Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/sound/talk/%{name}-%{alt_version}.tar.gz
 Patch0:		%{name}-make.patch
-BuildPrereq:	libgsm
+BuildRequires:	libgsm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Voice over IP
+Two-person bidirectional voice (and text) chat via a small-bandwidth
+TCP/IP network.
+
+%description -l pl
+Aplikacja do prowadzenia dwuosobowych, obukierunkowych rozmów
+(i przesy³ania tekstu) przez sieæ TCP/IP ma³ej przepustowo¶ci.
 
 %prep
 %setup  -q -n %{name}-%{alt_version}
