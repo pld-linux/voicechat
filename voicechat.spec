@@ -3,9 +3,8 @@ Name:		voicechat
 %define		alt_version 0.40-beta
 Version:	0.40_beta
 Release:	1
-Group:		Applications/Sound	
-######		Unknown group!
-Group(pl):	Aplikacje/D¼wiêk
+Group:		Applications/Communications
+Group(pl):	Aplikacje/Komunikacja
 License:	GPL
 Source0:	%{name}-%{alt_version}.tar.gz
 Patch0:		%{name}-make.patch
