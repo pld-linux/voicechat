@@ -4,6 +4,7 @@ Name:		voicechat
 Version:	0.40_beta
 Release:	1
 Group:		Applications/Communications
+Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 License:	GPL
 Source0:	%{name}-%{alt_version}.tar.gz
@@ -19,16 +20,16 @@ Voice over IP
 %patch0 -p1
 
 %build
-%{__make} CFLAGS="-Wall $RPM_OPT_FLAGS"
+%{__make} CFLAGS="-Wall %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-gzip -9nf README 
-
 install -d		$RPM_BUILD_ROOT%{_bindir}
 install voicevolume	$RPM_BUILD_ROOT%{_bindir}
 install voicechat 	$RPM_BUILD_ROOT%{_bindir}
+
+gzip -9nf README 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
