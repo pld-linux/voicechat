@@ -6,8 +6,6 @@ Version:	0.40_beta
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Group(de):	Applikationen/Kommunikation
-Group(pl):	Aplikacje/Komunikacja
 Source0:	ftp://sunsite.unc.edu/pub/Linux/apps/sound/talk/%{name}-%{alt_version}.tar.gz
 Patch0:		%{name}-make.patch
 BuildRequires:	libgsm-devel
