@@ -1,5 +1,5 @@
 Summary:	Voice chat over IP
-Summary(pl):	Rozmowa przez Internet
+Summary(pl.UTF-8):   Rozmowa przez Internet
 Name:		voicechat
 %define		alt_version 0.40-beta
 Version:	0.40_beta
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Two-person bidirectional voice (and text) chat via a small-bandwidth
 TCP/IP network.
 
-%description -l pl
-Aplikacja do prowadzenia dwuosobowych, obukierunkowych rozmÛw (i
-przesy≥ania tekstu) przez sieÊ TCP/IP ma≥ej przepustowo∂ci.
+%description -l pl.UTF-8
+Aplikacja do prowadzenia dwuosobowych, obukierunkowych rozm√≥w (i
+przesy≈Çania tekstu) przez sieƒá TCP/IP ma≈Çej przepustowo≈õci.
 
 %prep
 %setup  -q -n %{name}-%{alt_version}
