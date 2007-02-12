@@ -1,5 +1,5 @@
 Summary:	Voice chat over IP
-Summary(pl.UTF-8):   Rozmowa przez Internet
+Summary(pl.UTF-8):	Rozmowa przez Internet
 Name:		voicechat
 %define		alt_version 0.40-beta
 Version:	0.40_beta
